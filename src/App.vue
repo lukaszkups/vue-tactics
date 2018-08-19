@@ -1,12 +1,21 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
     <router-view/>
+    <ui-footer></ui-footer>
   </div>
 </template>
+
+<script>
+import UiFooter from '@/components/generic/Footer'
+
+export default {
+  name: 'App',
+  components: {
+    UiFooter
+  } 
+}
+</script>
+
 
 <style lang="scss">
 #app {
