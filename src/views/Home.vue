@@ -10,6 +10,9 @@ export default {
   name: 'Home',
   components: {
     MainMenu
+  },
+  mounted () {
+    this.$store.dispatch('levels/updateCurrentLevel', null)
   }
 }
 </script>
